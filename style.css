@@ -590,9 +590,32 @@ footer {
 /* ═══════════════════════════════════════════════════════
    RESPONSIVE
 ═══════════════════════════════════════════════════════ */
+/* ═══════════════════════════════════════════════════════
+   HAMBURGER BUTTON
+═══════════════════════════════════════════════════════ */
+.hamburger {
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    gap: 4px;
+    width: 32px; height: 32px;
+    background: transparent; border: none;
+    cursor: pointer; padding: 6px 2px;
+    z-index: 1100;
+}
+.hamburger span {
+    display: block;
+    width: 22px; height: 1.5px;
+    background: var(--text);
+    transition: transform .3s ease, opacity .3s ease;
+    transform-origin: center;
+}
+.hamburger.open span:nth-child(1) { transform: translateY(5.5px) rotate(45deg); }
+.hamburger.open span:nth-child(2) { opacity: 0; }
+.hamburger.open span:nth-child(3) { transform: translateY(-5.5px) rotate(-45deg); }
+
 @media (max-width: 900px) {
-    nav { padding: 0 1.2rem; }
-    .nav-links a { padding: 7px 10px; font-size: 0.72rem; }
+    nav { padding: 0 1.2rem; gap: 0; }
     .container { padding: 0 1.2rem; }
     .about-layout { grid-template-columns: 1fr; }
     .formation-layout { grid-template-columns: 1fr; }
@@ -601,7 +624,32 @@ footer {
     .docs-grid { grid-template-columns: 1fr; }
     .contact-grid { grid-template-columns: 1fr; }
     footer { flex-direction: column; gap: 0.8rem; text-align: center; padding: 1.5rem; }
+
+    .hamburger { display: flex; }
+
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        position: fixed;
+        top: var(--nav-h); left: 0; right: 0;
+        background: rgba(253,252,250,0.98);
+        border-bottom: 1.5px solid var(--text);
+        padding: 1rem 0 1.5rem;
+        gap: 0;
+        z-index: 999;
+    }
+    .nav-links.open { display: flex; }
+
+    .nav-links li { width: 100%; }
+    .nav-links a {
+        display: block;
+        padding: 14px 1.8rem;
+        font-size: 0.8rem;
+        border-bottom: 1px solid var(--border);
+    }
+    .nav-links li:last-child a { border-bottom: none; }
 }
+
 @media (max-width: 600px) {
     .hero-name { font-size: 4.5rem; }
     .comp-cards-grid { grid-template-columns: 1fr; }
