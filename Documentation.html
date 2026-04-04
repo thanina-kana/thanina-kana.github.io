@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thanina Kana — Documentation</title>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav>
+    <a href="index.html" class="nav-logo">
+        <div class="nav-logo-icon">🖥️</div>
+        <span class="nav-logo-text">Portfolio</span>
+    </a>
+    <ul class="nav-links">
+        <li><a href="index.html">Accueil</a></li>
+        <li><a href="Apropos.html">À propos</a></li>
+        <li><a href="Formation.html">Formation &amp; Exp. Pro</a></li>
+        <li><a href="Competences.html">Compétences</a></li>
+        <li><a href="Documentation.html" class="active">Documentation</a></li>
+        <li><a href="Contact.html">Contact</a></li>
+    </ul>
+</nav>
+
+<section class="page-section">
+    <div class="container">
+
+        <div class="section-heading">
+            <h2>Documentation</h2>
+            <div class="underline"></div>
+            <p>Les documentations techniques de mes projets — cliquez pour ouvrir le PDF</p>
+        </div>
+
+        <div class="docs-grid">
+
+            <div class="doc-card">
+                <div class="doc-card-header">
+                    <div class="doc-icon">🖧</div>
+                    <div>
+                        <div class="doc-title">Projet SISR — Infrastructure</div>
+                        <div class="doc-type">Documentation Technique</div>
+                    </div>
+                </div>
+                <div class="doc-desc">Documentation complète du projet infrastructure : installation Windows Server, Active Directory, GLPI, serveur Minecraft Paper, Zabbix et monitoring sur Proxmox.</div>
+                <div class="doc-tags">
+                    <span class="doc-tag">Proxmox</span>
+                    <span class="doc-tag">Active Directory</span>
+                    <span class="doc-tag">GLPI</span>
+                    <span class="doc-tag">Zabbix</span>
+                    <span class="doc-tag">Windows Server</span>
+                </div>
+                <a href="Projet_SISR.pdf" target="_blank" class="doc-dl-btn">📄 Ouvrir le PDF</a>
+            </div>
+
+            <div class="doc-card">
+                <div class="doc-card-header">
+                    <div class="doc-icon">🔒</div>
+                    <div>
+                        <div class="doc-title">Projet Cybersécurité — WordPress</div>
+                        <div class="doc-type">Documentation Technique</div>
+                    </div>
+                </div>
+                <div class="doc-desc">Déploiement et sécurisation complète d'un serveur WordPress : pare-feu UFW, fail2ban, HTTPS, hardening PHP, permissions fichiers, sauvegardes automatiques.</div>
+                <div class="doc-tags">
+                    <span class="doc-tag">WordPress</span>
+                    <span class="doc-tag">Apache</span>
+                    <span class="doc-tag">UFW / fail2ban</span>
+                    <span class="doc-tag">SSL</span>
+                    <span class="doc-tag">MariaDB</span>
+                </div>
+                <a href="ThaninaKana-B1-Cyber.pdf" target="_blank" class="doc-dl-btn">📄 Ouvrir le PDF</a>
+            </div>
+
+            <div class="doc-card">
+                <div class="doc-card-header">
+                    <div class="doc-icon">🏠</div>
+                    <div>
+                        <div class="doc-title">ImmoForm — Application Web</div>
+                        <div class="doc-type">Documentation Projet</div>
+                    </div>
+                </div>
+                <div class="doc-desc">Documentation complète de la plateforme ImmoForm : architecture MVC, base de données, fonctionnalités contact/formateur, sécurité (PDO, bcrypt, XSS, injections SQL).</div>
+                <div class="doc-tags">
+                    <span class="doc-tag">PHP</span>
+                    <span class="doc-tag">MySQL</span>
+                    <span class="doc-tag">PDO</span>
+                    <span class="doc-tag">Sécurité web</span>
+                    <span class="doc-tag">HTML/CSS</span>
+                </div>
+                <a href="immoform_V2.pdf" target="_blank" class="doc-dl-btn">📄 Ouvrir le PDF</a>
+            </div>
+
+            <div class="doc-card">
+                <div class="doc-card-header">
+                    <div class="doc-icon">📋</div>
+                    <div>
+                        <div class="doc-title">Curriculum Vitae</div>
+                        <div class="doc-type">CV — Thanina Kana</div>
+                    </div>
+                </div>
+                <div class="doc-desc">Mon CV complet : formation, expériences professionnelles, compétences techniques et soft skills.</div>
+                <div class="doc-tags">
+                    <span class="doc-tag">Bachelor SIN</span>
+                    <span class="doc-tag">EPSI Nantes</span>
+                    <span class="doc-tag">Stage IETR</span>
+                </div>
+                <a href="CV_Thanina_Kana.pdf" download="CV_Thanina_Kana.pdf" class="doc-dl-btn">⬇ Télécharger le CV</a>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<footer>
+    <div class="footer-copy">© 2026 Thanina Kana — Tous droits réservés</div>
+</footer>
+
+</body>
+</html>
