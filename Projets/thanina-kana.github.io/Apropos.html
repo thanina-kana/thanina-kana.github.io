@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thanina Kana — À propos</title>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav>
+    <a href="index.html" class="nav-logo">
+        <div class="nav-logo-icon">🖥️</div>
+        <span class="nav-logo-text">Portfolio</span>
+    </a>
+    <button class="hamburger" id="hamburger" aria-label="Menu"><span></span><span></span><span></span></button>
+    <ul class="nav-links" id="nav-links">
+        <li><a href="index.html">Accueil</a></li>
+        <li><a href="Apropos.html" class="active">À propos</a></li>
+        <li><a href="Formation.html">Formation &amp; Exp. Pro</a></li>
+        <li><a href="Competences.html">Compétences</a></li>
+        <li><a href="Documentation.html">Documentation</a></li>
+        <li><a href="Contact.html">Contact</a></li>
+    </ul>
+</nav>
+
+<section class="page-section">
+    <div class="container">
+
+        <div class="section-heading">
+            <h2>À propos de moi</h2>
+            <div class="underline"></div>
+            <p>Découvrez mon parcours, mes compétences et ma passion pour l'informatique</p>
+        </div>
+
+        <div class="about-layout">
+
+            <div class="profile-card">
+                <div class="profile-avatar">TK</div>
+                <div class="profile-name">Thanina Kana</div>
+                <div class="profile-title">Étudiante Bachelor SIN — EPSI Nantes</div>
+
+                <div class="profile-infos">
+                    <div class="profile-info-row">
+                        <span class="p-icon">📍</span>
+                        Nantes, France
+                    </div>
+                    <div class="profile-info-row">
+                        <span class="p-icon">✉</span>
+                        <a href="/cdn-cgi/l/email-protection#1b6f737a7572757a707a757a2f5b7c767a727735787476"><span class="__cf_email__" data-cfemail="32465a535c5b5c5359535c530672555f535b5e1c515d5f">[email&#160;protected]</span></a>
+                    </div>
+                    <div class="profile-info-row">
+                        <span class="p-icon">in</span>
+                        <a href="https://www.linkedin.com/in/thanina-kana/" target="_blank" rel="noopener">linkedin.com/in/thanina-kana</a>
+                    </div>
+                    <div class="profile-info-row">
+                        <span class="p-icon">📞</span>
+                        07 44 43 39 15
+                    </div>
+                </div>
+
+                <div class="stats-grid">
+                    <div class="stat-box">
+                        <div class="stat-num">1</div>
+                        <div class="stat-label">Année d'études</div>
+                    </div>
+                    <div class="stat-box">
+                        <div class="stat-num">5+</div>
+                        <div class="stat-label">Projets réalisés</div>
+                    </div>
+                    <div class="stat-box">
+                        <div class="stat-num">1</div>
+                        <div class="stat-label">Stage en cours</div>
+                    </div>
+                    <div class="stat-box">
+                        <div class="stat-num">4</div>
+                        <div class="stat-label">Langues</div>
+                    </div>
+                </div>
+
+                <a href="CV_Thanina_Kana.pdf" download="CV_Thanina_Kana.pdf" class="cv-download">
+                    📄 Télécharger mon CV
+                </a>
+            </div>
+
+            <div class="about-right">
+
+                <div class="about-card">
+                    <div class="about-card-title">
+                        <div class="icon">👤</div>
+                        Qui suis-je ?
+                    </div>
+                    <p>Je suis Thanina Kana, étudiante en Bachelor Systèmes Informatiques et Numériques (SIN) à l'EPSI Nantes, spécialisée en administration systèmes et réseaux.</p>
+                    <p>Mon objectif est de poursuivre en <strong>Master Cybersécurité</strong> pour me spécialiser dans l'analyse SOC et le pentest, en mettant à profit ma rigueur, ma logique et mon autonomie.</p>
+                </div>
+
+                <div class="two-cols">
+                    <div class="about-card">
+                        <div class="about-card-title">Points forts</div>
+                        <ul class="bullet-list">
+                            <li>Autonomie</li>
+                            <li>Rigueur</li>
+                            <li>Esprit d'équipe</li>
+                            <li>Capacité d'adaptation</li>
+                            <li>Curiosité</li>
+                        </ul>
+                    </div>
+                    <div class="about-card">
+                        <div class="about-card-title">Centres d'intérêt</div>
+                        <ul class="bullet-list">
+                            <li>Cybersécurité</li>
+                            <li>TryHackMe</li>
+                            <li>Natation</li>
+                            <li>Apprendre des langues</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="about-card">
+                    <div class="about-card-title">Langues</div>
+                    <div>
+                        <span class="lang-tag">Français — Natif</span>
+                        <span class="lang-tag">Anglais — C1</span>
+                        <span class="lang-tag">Kabyle — Natif</span>
+                        <span class="lang-tag">Arabe</span>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</section>
+<script>
+    const btn = document.getElementById('hamburger');
+    const menu = document.getElementById('nav-links');
+    btn.addEventListener('click', () => {
+        btn.classList.toggle('open');
+        menu.classList.toggle('open');
+    });
+    menu.querySelectorAll('a').forEach(a => {
+        a.addEventListener('click', () => {
+            btn.classList.remove('open');
+            menu.classList.remove('open');
+        });
+    });
+</script>
+</body>
+</html>

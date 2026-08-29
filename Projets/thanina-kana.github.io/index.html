@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thanina Kana — Accueil</title>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav>
+    <a href="index.html" class="nav-logo">
+        <div class="nav-logo-icon">🖥️</div>
+        <span class="nav-logo-text">Portfolio</span>
+    </a>
+    <button class="hamburger" id="hamburger" aria-label="Menu"><span></span><span></span><span></span></button>
+    <ul class="nav-links" id="nav-links">
+        <li><a href="index.html" class="active">Accueil</a></li>
+        <li><a href="Apropos.html">À propos</a></li>
+        <li><a href="Formation.html">Formation &amp; Exp. Pro</a></li>
+        <li><a href="Competences.html">Compétences</a></li>
+        <li><a href="Documentation.html">Documentation</a></li>
+        <li><a href="Contact.html">Contact</a></li>
+    </ul>
+</nav>
+
+<section id="accueil" class="page-section">
+    <div class="container">
+        <div class="hero-badge">
+            <span class="dot"></span>
+            Bachelor SIN &nbsp;·&nbsp; Systèmes &amp; Réseaux — EPSI Nantes
+        </div>
+        <h1 class="hero-name">
+            <span class="line1">THANINA</span>
+            <span class="line2">KANA</span>
+        </h1>
+        <p class="hero-tagline">
+            Passionnée par l'<span class="hl-orange">infrastructure IT</span> &amp; la <span class="hl-purple">cybersécurité</span>.
+        </p>
+        <p class="hero-desc">
+            Étudiante en <strong>Bachelor SIN</strong> à l'EPSI Nantes, je développe mes compétences en
+            <strong>administration système</strong>, <strong>sécurité réseau</strong> et <strong>infrastructure informatique</strong>.
+        </p>
+        <a href="Apropos.html" class="hero-scroll">↓</a>
+    </div>
+</section>
+
+<script>
+    const btn = document.getElementById('hamburger');
+    const menu = document.getElementById('nav-links');
+    btn.addEventListener('click', () => {
+        btn.classList.toggle('open');
+        menu.classList.toggle('open');
+    });
+    // Fermer le menu quand on clique un lien
+    menu.querySelectorAll('a').forEach(a => {
+        a.addEventListener('click', () => {
+            btn.classList.remove('open');
+            menu.classList.remove('open');
+        });
+    });
+</script>
+</body>
+</html>

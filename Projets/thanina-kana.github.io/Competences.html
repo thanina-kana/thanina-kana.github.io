@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thanina Kana — Compétences</title>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav>
+    <a href="index.html" class="nav-logo">
+        <div class="nav-logo-icon">🖥️</div>
+        <span class="nav-logo-text">Portfolio</span>
+    </a>
+    <button class="hamburger" id="hamburger" aria-label="Menu"><span></span><span></span><span></span></button>
+    <ul class="nav-links" id="nav-links">
+        <li><a href="index.html">Accueil</a></li>
+        <li><a href="Apropos.html">À propos</a></li>
+        <li><a href="Formation.html">Formation &amp; Exp. Pro</a></li>
+        <li><a href="Competences.html" class="active">Compétences</a></li>
+        <li><a href="Documentation.html">Documentation</a></li>
+        <li><a href="Contact.html">Contact</a></li>
+    </ul>
+</nav>
+
+<section class="page-section">
+    <div class="container">
+
+        <div class="section-heading">
+            <h2>Compétences</h2>
+            <div class="underline"></div>
+            <p>Ce que je sais faire</p>
+        </div>
+
+        <div class="competences-block">
+            <div class="comp-block-header">
+                <div class="comp-block-icon">🔧</div>
+                <div class="comp-block-title">Support et mise à disposition des services informatiques</div>
+            </div>
+            <div class="comp-cards-grid">
+                <div class="comp-card">
+                    <div class="comp-card-header"><div class="comp-card-logo">🐧</div><div class="comp-card-name">Linux</div></div>
+                    <div class="comp-card-desc">Debian, Ubuntu. Administration, scripts Bash, gestion des services et droits.</div>
+                </div>
+                <div class="comp-card">
+                    <div class="comp-card-header"><div class="comp-card-logo">🪟</div><div class="comp-card-name">Windows Server</div></div>
+                    <div class="comp-card-desc">Installation, configuration AD, DHCP, DNS, GPO sur VM.</div>
+                </div>
+                <div class="comp-card">
+                    <div class="comp-card-header"><div class="comp-card-logo">🎫</div><div class="comp-card-name">GLPI</div></div>
+                    <div class="comp-card-desc">Installation, gestion des tickets et inventaire de parc informatique.</div>
+                </div>
+                <div class="comp-card">
+                    <div class="comp-card-header"><div class="comp-card-logo">🔑</div><div class="comp-card-name">Active Directory</div></div>
+                    <div class="comp-card-desc">Comptes, groupes, stratégies de sécurité et GPO sur domaine epsi.local.</div>
+                </div>
+                <div class="comp-card">
+                    <div class="comp-card-header"><div class="comp-card-logo">🌐</div><div class="comp-card-name">Apache</div></div>
+                    <div class="comp-card-desc">VirtualHost, SSL/TLS, déploiement d'applications PHP.</div>
+                </div>
+                <div class="comp-card">
+                    <div class="comp-card-header"><div class="comp-card-logo">🗄️</div><div class="comp-card-name">MariaDB / MySQL</div></div>
+                    <div class="comp-card-desc">Bases de données, gestion des utilisateurs, SQL, sécurisation.</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="competences-block">
+            <div class="comp-block-header">
+                <div class="comp-block-icon">⚖️</div>
+                <div class="comp-block-title">Supervision et haute disponibilité</div>
+            </div>
+            <div class="comp-cards-grid">
+                <div class="comp-card">
+                    <div class="comp-card-header"><div class="comp-card-logo">⚖️</div><div class="comp-card-name">HAProxy</div></div>
+                    <div class="comp-card-desc">Load balancing, reverse proxy, haute disponibilité.</div>
+                </div>
+                <div class="comp-card">
+                    <div class="comp-card-header"><div class="comp-card-logo">📊</div><div class="comp-card-name">Uptime Kuma</div></div>
+                    <div class="comp-card-desc">Monitoring de services, alertes et tableaux de bord.</div>
+                </div>
+                <div class="comp-card">
+                    <div class="comp-card-header"><div class="comp-card-logo">🔍</div><div class="comp-card-name">Zabbix</div></div>
+                    <div class="comp-card-desc">Supervision réseau et système, hôtes et triggers.</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="competences-block">
+            <div class="comp-block-header">
+                <div class="comp-block-icon">📦</div>
+                <div class="comp-block-title">Virtualisation</div>
+            </div>
+            <div class="comp-cards-grid">
+                <div class="comp-card">
+                    <div class="comp-card-header"><div class="comp-card-logo">🖥️</div><div class="comp-card-name">Proxmox</div></div>
+                    <div class="comp-card-desc">VM et conteneurs LXC, configuration réseau (bridges, NAT, iptables).</div>
+                </div>
+                <div class="comp-card">
+                    <div class="comp-card-header"><div class="comp-card-logo">🐳</div><div class="comp-card-name">Docker</div></div>
+                    <div class="comp-card-desc">Déploiement de conteneurs, Docker Compose, images personnalisées.</div>
+                </div>
+                <div class="comp-card">
+                    <div class="comp-card-header"><div class="comp-card-logo">📦</div><div class="comp-card-name">VirtualBox / VMware</div></div>
+                    <div class="comp-card-desc">Environnements de test, snapshots, réseaux virtuels.</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="competences-block">
+            <div class="comp-block-header">
+                <div class="comp-block-icon">💻</div>
+                <div class="comp-block-title">Développement web et scripting</div>
+            </div>
+            <div class="comp-cards-grid">
+                <div class="comp-card">
+                    <div class="comp-card-header"><div class="comp-card-logo">🌍</div><div class="comp-card-name">HTML / CSS</div></div>
+                    <div class="comp-card-desc">Intégration web responsive, mise en page, design d'interfaces.</div>
+                </div>
+                <div class="comp-card">
+                    <div class="comp-card-header"><div class="comp-card-logo">🐘</div><div class="comp-card-name">PHP</div></div>
+                    <div class="comp-card-desc">Applications web dynamiques, PDO, auth bcrypt, sécurisation.</div>
+                </div>
+                <div class="comp-card">
+                    <div class="comp-card-header"><div class="comp-card-logo">⚙️</div><div class="comp-card-name">C++ / Bash / PS</div></div>
+                    <div class="comp-card-desc">Scripting d'automatisation, programmation orientée objet.</div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<footer>
+    <div class="footer-copy">© 2026 Thanina Kana — Tous droits réservés</div>
+</footer>
+
+<script>
+    const btn = document.getElementById('hamburger');
+    const menu = document.getElementById('nav-links');
+    btn.addEventListener('click', () => {
+        btn.classList.toggle('open');
+        menu.classList.toggle('open');
+    });
+    // Fermer le menu quand on clique un lien
+    menu.querySelectorAll('a').forEach(a => {
+        a.addEventListener('click', () => {
+            btn.classList.remove('open');
+            menu.classList.remove('open');
+        });
+    });
+</script>
+</body>
+</html>
