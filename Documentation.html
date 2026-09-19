@@ -38,6 +38,28 @@
 
             <div class="doc-card">
                 <div class="doc-card-header">
+                    <div class="doc-icon">🏠</div>
+                    <div>
+                        <div class="doc-title">Rapport de stage B1 — Maison Connectée ESP32</div>
+                        <div class="doc-type">Rapport de Stage · IETR — Nantes Université</div>
+                    </div>
+                </div>
+                <div class="doc-desc">Rapport complet de mon stage de 6 semaines à l'IETR : prise en main de l'ESP32, capteurs KY-032/026/015, connexion Wi-Fi, dashboard PHP/MySQL et boîtier en impression 3D.</div>
+                <div class="doc-tags">
+                    <span class="doc-tag">ESP32</span>
+                    <span class="doc-tag">IoT</span>
+                    <span class="doc-tag">PHP/MySQL</span>
+                    <span class="doc-tag">Arduino</span>
+                    <span class="doc-tag">C/C++</span>
+                </div>
+                <div style="display:flex; gap:10px; flex-wrap:wrap; margin-top:0.8rem;">
+                    <a href="rapport_stage_B1.pdf" target="_blank" class="doc-dl-btn">📄 Ouvrir le rapport</a>
+                    <a href="https://github.com/thanina-kana/maison-connectee-ESP32" target="_blank" rel="noopener" class="doc-dl-btn" style="background:#1a1a2e; color:#fff;">💻 Voir le GitHub</a>
+                </div>
+            </div>
+
+            <div class="doc-card">
+                <div class="doc-card-header">
                     <div class="doc-icon">🖧</div>
                     <div>
                         <div class="doc-title">Projet SISR — Infrastructure</div>
@@ -125,7 +147,6 @@
         btn.classList.toggle('open');
         menu.classList.toggle('open');
     });
-    // Fermer le menu quand on clique un lien
     menu.querySelectorAll('a').forEach(a => {
         a.addEventListener('click', () => {
             btn.classList.remove('open');
