@@ -6,6 +6,13 @@
     <title>Thanina Kana — Contact</title>
     <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-7P7NPSGLMM"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-7P7NPSGLMM');
+    </script>
 </head>
 <body>
 
@@ -52,21 +59,7 @@
             </div>
         </div>
 
-    </div>
+        </div>
 </section>
-<script>
-    const btn = document.getElementById('hamburger');
-    const menu = document.getElementById('nav-links');
-    btn.addEventListener('click', () => {
-        btn.classList.toggle('open');
-        menu.classList.toggle('open');
-    });
-    menu.querySelectorAll('a').forEach(a => {
-        a.addEventListener('click', () => {
-            btn.classList.remove('open');
-            menu.classList.remove('open');
-        });
-    });
-</script>
 </body>
 </html>
